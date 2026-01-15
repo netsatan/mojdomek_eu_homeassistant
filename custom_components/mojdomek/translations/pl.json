@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konfiguracja MójDomek",
+        "description": "Wprowadź swój identyfikator API MójDomek z adresu URL: https://mojdomek.eu/api/api2.php?id=TWOJ_ID",
+        "data": {
+          "api_id": "Identyfikator API"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nieprawidłowy identyfikator API lub nie znaleziono aktywnych lokalizacji",
+      "cannot_connect": "Nie udało się połączyć z API MójDomek",
+      "unknown": "Wystąpił nieoczekiwany błąd"
+    },
+    "abort": {
+      "already_configured": "Ten identyfikator API jest już skonfigurowany"
+    },
+    "options": {
+      "step": {
+        "init": {
+          "title": "Opcje MójDomek",
+          "data": {
+            "scan_interval": "Interwał odpytywania (minuty)"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up MójDomek",
+        "description": "Enter your MójDomek API ID from the URL: https://mojdomek.eu/api/api2.php?id=YOUR_ID",
+        "data": {
+          "api_id": "API ID"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API ID or no active locations found",
+      "cannot_connect": "Failed to connect to MójDomek API",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "This API ID is already configured"
+    },
+    "options": {
+      "step": {
+        "init": {
+          "title": "MójDomek options",
+          "data": {
+            "scan_interval": "Scan interval (minutes)"
+          }
+        }
+      }
+    }
+  }
+}

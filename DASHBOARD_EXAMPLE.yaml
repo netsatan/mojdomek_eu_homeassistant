@@ -1,0 +1,63 @@
+# Example Home Assistant Dashboard Card Configuration
+# Add this to your Lovelace dashboard to display tank information
+
+# Vertical Stack Card - Complete Tank Monitor
+type: vertical-stack
+cards:
+  # Tank Level Card
+  - type: gauge
+    entity: sensor.czujnik_rzeszotary_tank_level
+    name: Septic Tank Level
+    min: 0
+    max: 100
+    severity:
+      green: 0
+      yellow: 70
+      red: 85
+    
+  # Detailed Statistics
+  - type: entities
+    title: Tank Details
+    entities:
+      - entity: sensor.czujnik_rzeszotary_tank_level
+        name: Level (%)
+      - entity: sensor.czujnik_rzeszotary_tank_level_cm
+        name: Level (cm)
+      - entity: sensor.czujnik_rzeszotary_temperature
+        name: Temperature
+      - entity: sensor.czujnik_rzeszotary_predicted_full_date
+        name: Predicted Full
+      - entity: sensor.czujnik_rzeszotary_last_emptied
+        name: Last Emptied
+      - type: divider
+      - entity: sensor.czujnik_rzeszotary_battery_level
+        name: Battery
+      - entity: sensor.czujnik_rzeszotary_signal_strength
+        name: Signal
+      - entity: sensor.czujnik_rzeszotary_last_update
+        name: Last Update
+
+# Alternative: Simple Card
+# - type: entity
+#   entity: sensor.czujnik_rzeszotary_tank_level
+#   name: Septic Tank
+
+# History Graph Card
+# - type: history-graph
+#   title: Tank Level History
+#   hours_to_show: 168
+#   entities:
+#     - entity: sensor.czujnik_rzeszotary_tank_level
+#     - entity: sensor.czujnik_rzeszotary_temperature
+
+# Mini Graph Card (requires HACS plugin)
+# - type: custom:mini-graph-card
+#   entities:
+#     - entity: sensor.czujnik_rzeszotary_tank_level
+#       name: Tank Level
+#   hours_to_show: 168
+#   line_width: 2
+#   font_size: 75
+#   show:
+#     labels: true
+#     points: false

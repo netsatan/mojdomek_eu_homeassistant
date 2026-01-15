@@ -1,0 +1,8 @@
+{
+  "name": "MójDomek Septic Tank Monitor",
+  "content_in_root": false,
+  "filename": "mojdomek",
+  "homeassistant": "2023.8.0",
+  "render_readme": true,
+  "zip_release": false
+}
