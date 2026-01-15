@@ -1,10 +1,11 @@
 {
   "domain": "mojdomek",
   "name": "MójDomek Septic Tank Monitor",
-  "codeowners": [],
+  "codeowners": ["@netsatan"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/yourusername/mojdomek-homeassistant",
+  "documentation": "https://github.com/netsatan/mojdomek_eu_homeassistant",
+  "issue_tracker": "https://github.com/netsatan/mojdomek_eu_homeassistant/issues",
   "integration_type": "service",
   "iot_class": "cloud_polling",
   "requirements": ["aiohttp>=3.8.0"],

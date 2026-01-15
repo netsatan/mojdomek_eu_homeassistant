@@ -135,7 +135,7 @@ No authentication beyond the API ID is required.
 
 ## Support
 
-For issues, feature requests, or contributions, please visit the [GitHub repository](https://github.com/yourusername/mojdomek-homeassistant).
+For issues, feature requests, or contributions, please visit the [GitHub repository](https://github.com/netsatan/mojdomek_eu_homeassistant).
 
 ## License
 
