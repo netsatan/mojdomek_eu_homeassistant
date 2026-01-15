@@ -125,7 +125,7 @@ automation:
 
 ## API Details
 
-This integration polls the MójDomek API every 5 minutes (300 seconds) by default. The API endpoint used is:
+This integration polls the MójDomek API every 3 hours (180 minutes) by default. The API endpoint used is:
 
 ```
 https://mojdomek.eu/api/api2.php?id=YOUR_API_ID
